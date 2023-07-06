@@ -64,7 +64,7 @@ def login():
                 if check_password_hash(the_password[0][0][0], password):
                     # if the_password[0][0][0] == password:
                     login_user(user)
-                    print("Good password and user : ", user.name)
+                    print("Good password and userr : ", user.name)
                     return redirect(url_for('secrets', name=user.name))
 
     return render_template("login.html")
